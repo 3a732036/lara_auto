@@ -17,7 +17,7 @@ use Monolog\Handler\StreamHandler;
 
 // create a log channel
 $log = new Logger('name');
-$log->pushHandler(new StreamHandler('lara_auto/log/your.log', Logger::WARNING));
+$log->pushHandler(new StreamHandler('../log/your.log', Logger::WARNING));
 
 // add records to the log
 $log->warning('Foo');
